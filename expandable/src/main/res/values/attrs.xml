@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="expandedPosition">
+       <!-- <enum name="position" value="1" />-->
+    </attr>
+
+    <declare-styleable name="ExpandedLayout">
+        <attr name="expandedPosition" />
+    </declare-styleable>
+
+</resources>
