@@ -27,3 +27,24 @@ dependencies {
 replacing ${version} with the version you wish to use
 
 ## Usage
+
+Add _xmlns:expanded="http://schemas.android.com/apk/res-auto"_ to your layout xml root.
+You're now ready to use ExpandableLinearLayout! Just add to your layout xml:
+
+    <kz.flyingv.expandablelinearlayout.ExpandableLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            expanded:expandedPosition="0">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </kz.flyingv.expandablelinearlayout.ExpandableLinearLayout>
+
+Just specify a child position, which you want to expand in the layout by using _expanded:expandedPosition="0"_
