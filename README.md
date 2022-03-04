@@ -3,7 +3,7 @@
 # ExpandableLinearLayout
 LinearLayout for Android, with analog of Flutter's Expanded Widget
 
-![](https://github.com/flyingV805/ExpandableLinearLayout/blob/master/img/example.jpg =250x250)
+<img src="https://github.com/flyingV805/ExpandableLinearLayout/blob/master/img/example.jpg" width="200" />
 
 ## Install
 
