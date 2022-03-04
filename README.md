@@ -2,3 +2,27 @@
 
 # ExpandableLinearLayout
 LinearLayout for Android, with analog of Flutter's Expanded Widget
+
+## Install
+
+### Jitpack
+
+Add Jitpack to your build file's list of repositories.
+
+```groovy
+repositories {
+   maven { url 'https://jitpack.io' }
+}
+```
+
+to use the Jitpack.IO Repository
+
+```groovy
+dependencies {
+    ...
+    implementation 'com.github.flyingV805:ExpandableLinearLayout:0.0.1'
+    ...
+}
+```
+
+## Usage
