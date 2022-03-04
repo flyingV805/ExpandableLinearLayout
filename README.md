@@ -2,6 +2,7 @@
 
 # ExpandableLinearLayout
 LinearLayout for Android, with analog of Flutter's Expanded Widget
+[1]: https://github.com/flyingV805/ExpandableLinearLayout/blob/master/img/example.jpg
 
 ## Install
 
@@ -47,4 +48,4 @@ You're now ready to use ExpandableLinearLayout! Just add to your layout xml:
 
     </kz.flyingv.expandablelinearlayout.ExpandableLinearLayout>
 
-Just specify a child position, which you want to expand in the layout by using _expanded:expandedPosition="0"_
+Then specify a child position, which you want to expand in the layout by using _expanded:expandedPosition="0"_
