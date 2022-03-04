@@ -20,9 +20,10 @@ to use the Jitpack.IO Repository
 ```groovy
 dependencies {
     ...
-    implementation 'com.github.flyingV805:ExpandableLinearLayout:0.0.1'
+    implementation 'com.github.flyingV805:ExpandableLinearLayout:${version}'
     ...
 }
 ```
+replacing ${version} with the version you wish to use
 
 ## Usage
