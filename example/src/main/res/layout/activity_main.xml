@@ -27,7 +27,9 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="#0 expanded"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
@@ -35,7 +37,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"/>
 
         </kz.flyingv.expandablelinearlayout.ExpandableLinearLayout>
 
@@ -51,7 +54,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="#1 expanded"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
@@ -72,6 +76,7 @@
             expanded:expandedPosition="2">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="132dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -81,7 +86,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="#2 expanded" />
 
         </kz.flyingv.expandablelinearlayout.ExpandableLinearLayout>
 

@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.widget.LinearLayoutCompat
-import androidx.core.view.children
+import androidx.core.view.*
 
 class ExpandableLinearLayout: LinearLayoutCompat {
 
@@ -46,30 +46,43 @@ class ExpandableLinearLayout: LinearLayoutCompat {
         var notExpandedChildrenWidth = 0
         for(i in 0 until childCount){
             if(i != expandedChildPosition){
-                Log.d("child", "$i child width: ${getChildAt(i).width}")
-                notExpandedChildrenWidth += getChildAt(i).width
+                val child = getChildAt(i)
+                notExpandedChildrenWidth += child.width
+                notExpandedChildrenWidth += child.marginStart
+                notExpandedChildrenWidth += child.marginEnd
             }
         }
 
         Log.d("modifyChildren", "notExpandedChildrenWidth: $notExpandedChildrenWidth")
-        val params = getChildAt(expandedChildPosition).layoutParams
+
+        val expandedChild = getChildAt(expandedChildPosition)
+        notExpandedChildrenWidth += expandedChild.marginStart
+        notExpandedChildrenWidth += expandedChild.marginEnd
+
+
+        val params = expandedChild.layoutParams
         params.width = width - notExpandedChildrenWidth
-        getChildAt(expandedChildPosition).layoutParams = params
+        expandedChild.layoutParams = params
     }
 
     private fun modifyChildrenVertical(){
         Log.d("expandable child", "position: $expandedChildPosition")
-        Log.d("onLayout", "Parent width: $width")
-        Log.d("onLayout", "Parent height: $height")
 
         var notExpandedChildrenHeight = 0
 
         for(i in 0 until childCount){
             if(i != expandedChildPosition){
+                val child = getChildAt(i)
                 Log.d("child", "Parent width: $height")
-                notExpandedChildrenHeight += getChildAt(i).height
+                notExpandedChildrenHeight += child.height
+                notExpandedChildrenHeight += child.marginTop
+                notExpandedChildrenHeight += child.marginBottom
             }
         }
+
+        val expandedChild = getChildAt(expandedChildPosition)
+        notExpandedChildrenHeight += expandedChild.marginTop
+        notExpandedChildrenHeight += expandedChild.marginBottom
 
         val params = getChildAt(expandedChildPosition).layoutParams
         params.height = height - notExpandedChildrenHeight
